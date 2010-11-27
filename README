@@ -1,0 +1,11 @@
+This software is a some kind of network music player I done for my personal purposes.
+I use it with PulseAudio over network to watch a video or listen music from my pc with in a headphones ;)
+
+It is very simple to setup a PulseAudio server to send audio output over network
+pactl load-module module-simple-protocol-tcp rate=48000 format=s16le channels=2 source=alsa_output.pci-0000_00_1b.0.analog-stereo.monitor record=true port=server_port listen=ip_address
+                                                                                        ^^^^^ change this with oyur own device ^^^^^^^
+And now you just connect to ip:port via PulseDroid software and enjoy
+
+Hope it will be very useful somewhere for someone else.
+
+Regards, Ivan ;)
